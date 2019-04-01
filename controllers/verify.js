@@ -17,11 +17,6 @@ class Verify {
         // let data = new FormData();
         // data.append('api_key', config.api_key)
         // data.append('api_secret', config.api_secret)
-
-        // let data = {
-        //     api_key: 'TszcN4_TbA6GZIZrB7QwHHpUtZlk_VdT',
-        //     api_secret: 't7mGwAocrnyQlUqIlZZzGKSZISu54oeQ'
-        // }
  
         await axios.post(config.baseURL, data, { headers:{'Content-Type': 'multipart/form-data'}})
             .then(res => {

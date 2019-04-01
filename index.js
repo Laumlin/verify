@@ -8,6 +8,9 @@ app.use(bodyParser());
 
 app.use(cors());
 
+app.on('error', (err, ctx) =>
+  console.error('server error', err)
+);
 
 app
     .use(router.routes())
